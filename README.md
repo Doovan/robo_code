@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @bb-Kong
+- 👋 Hi, I’m @Rzc-k
 - 👀 I’m interested in robot
 - 🌱 I’m currently learning Liunx and C++
 - 💞️ I’m looking to collaborate on ...
