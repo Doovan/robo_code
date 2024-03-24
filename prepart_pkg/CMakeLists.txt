@@ -25,14 +25,14 @@ include_directories(${VTK_INCLUDE_DIRS})
 #查找 PCL 库
 find_package(PCL REQUIRED)
 include_directories(${PCL_INCLUDE_DIRS})
+add_definitions(${PCL_DEFINITIONS})
 # 查找 Eigen3 库
 find_package(Eigen3 REQUIRED)
 include_directories(${EIGEN3_INCLUDE_DIR})
-# uncomment the following section in order to fill in
-# further dependencies manually.
-# find_package(<dependency> REQUIRED)
 
-add_executable(prepart_pkg src/vtkTest.cpp)
+include_directories(include/)
+
+add_executable(prepart_pkg src/preTreat.cpp src/main.cpp)
 
 # 链接 PCL、Eigen3 和 VTK 库
 target_link_libraries(prepart_pkg ${PCL_LIBRARIES} ${EIGEN3_LIBRARIES} ${VTK_LIBRARIES})
