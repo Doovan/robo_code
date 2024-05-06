@@ -1,3 +1,5 @@
 /build
 /install
 /log
+/pointNet++/log/*
+/pointNet++/data/*
